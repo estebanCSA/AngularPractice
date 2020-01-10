@@ -1,1 +1,9 @@
 <p>faqs works!</p>
+<button #btn (click) ="clickEvent()" type="button" class="btn btn-dark">Dark</button>
+<p>value in button is {{btn.innerText}}</p>
+
+<button #chicken (dblclick)="switch()" type="button" class="btn btn-dark">Off</button>
+
+<div *ngIf = "flip">
+    <p>I am visible</p>
+</div>
