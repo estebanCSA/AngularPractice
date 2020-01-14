@@ -1,0 +1,11 @@
+<p-sidebar [(visible)]="display">
+    Content
+</p-sidebar>
+
+<button type="text" (click)="display = true" pButton icon="pi pi-plus" label="Show"></button>
+
+<p-sidebar [(visible)]="display" [style]="{width:'30em'}"></p-sidebar>
+
+<p-sidebar [(visible)]="display" styleClass="ui-sidebar-sm"></p-sidebar>
+<p-sidebar [(visible)]="display" styleClass="ui-sidebar-md"></p-sidebar>
+<p-sidebar [(visible)]="display" styleClass="ui-sidebar-lg"></p-sidebar>
