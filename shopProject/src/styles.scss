@@ -1,0 +1,113 @@
+@import "~bootstrap/scss/bootstrap";
+.blackBG{
+    background-image: linear-gradient(black,black);
+}
+.bruh{
+    background-color: #020C2D;
+}
+.whiteText{
+    color: white;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+.lower{
+    margin-top: 30px;
+}
+.higher{
+    margin-bottom: 30px;
+}
+.heroImage {
+    //blurrystock @blurrystock
+    background-image:url("https://images.unsplash.com/photo-1520092352425-9699926a9b0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.WelcomeMsg{
+     margin-top: 120px;
+     margin-bottom: 120px;
+ }
+.mainImages{
+    margin-bottom: 400px;
+    margin-bottom: 400px;
+}
+.foot{
+    background-color: #5D0202;
+}
+.cent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tos{
+    background-image: linear-gradient(#5D0202,#020C2D);
+    border: 5px ridge;
+    border-color:white;
+}
+.faded{
+    opacity: 50%;
+}
+.fadedd{
+    opacity: 70%;
+}
+.unfad{
+    opacity: 200%;
+    fill-opacity: 100%;
+}
+.bord{
+    border: 1px solid;
+    border-color:white;
+}
+.wxboControl{
+    //Sebastian DC @sebastiandc
+    background-image:url("https://images.unsplash.com/photo-1543973277-5020ef836640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.dragonBG{
+    //Mendar Bouchali @mendarb
+    background-image: url("https://images.unsplash.com/photo-1512522156303-e02eda5e76e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.itemPage{
+    //Jon Tyson @jontyson
+    background-image: url("https://images.unsplash.com/photo-1557411732-1797a9171fcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.signUP{
+    color: #5D0202;
+}
+.supinBG{
+    //Florian Olivo @rxspawn
+    background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.right{
+    align-items: flex-end;
+}
+.padded{
+    padding-left: 5px;
+    padding-right: 5px;
+}
