@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor='let product of products'>
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.productName}}</h5>
+                    <p class="card-text">{{product.productDesc}}</p>
+                    <p class="card-text">{{produt.productInfo}}</p>
+                    <a routerLink="/{{product.productNameURL}}/{{product.id}}" class="btn btn-primary">buy now for {{product.price}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

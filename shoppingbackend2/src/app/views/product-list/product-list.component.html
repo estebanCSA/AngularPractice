@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" *ngFor = 'let item of productList'>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.pName}}</h5>
+                  <p class="card-text">{{item.additionalInfo}}</p>
+                  <p class="card-text">{{item.pDesc}}</p>
+                  <app-modalsdesc></app-modalsdesc>
+                  <a routerLink="/{{itempNameURL}}/{{item.id}}" class="card-link">{{item.price}}</a>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
