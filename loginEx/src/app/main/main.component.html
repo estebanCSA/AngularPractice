@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3">
+            <input #un type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <input #un type="text" class="form-control" placeholder="First Name" aria-label="First Name"
+                aria-describedby="basic-addon1">
+            <input #un type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"
+                aria-describedby="basic-addon1">
+            <input #un type="text" class="form-control" placeholder="Email Address" aria-label="Email Address"
+                aria-describedby="basic-addon1">
+            <input #un type="text" class="form-control" placeholder="Confirm Email Address" aria-label="Confirm Email Address"
+                aria-describedby="basic-addon1">
+            <input #pw type="password" class="form-control" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1">
+            <input #pw type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password"
+                aria-describedby="basic-addon1">
+            <button type="button" (click)='signUp(un.value, fn.value, ln.value,ea.value, ce.value, pw.value,cpw.value)' class="btn btn-dark">Log Me In!!</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
