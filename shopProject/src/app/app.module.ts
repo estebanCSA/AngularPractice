@@ -16,6 +16,8 @@ import { ItemComponent } from './item/item.component';
 import { SigninupComponent } from './signinup/signinup.component';
 import { CartOneComponent } from './cart-one/cart-one.component';
 import { CartTwoComponent } from './cart-two/cart-two.component';
+import { ModalComponent } from './modal/modal.component';
+import { ModaldescComponent } from './shared/modaldesc/modaldesc.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CartTwoComponent } from './cart-two/cart-two.component';
     ItemComponent,
     SigninupComponent,
     CartOneComponent,
-    CartTwoComponent
+    CartTwoComponent,
+    ModalComponent,
+    ModaldescComponent
   ],
   imports: [
     BrowserModule,

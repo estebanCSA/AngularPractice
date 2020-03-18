@@ -54,7 +54,7 @@ export class DataServicesService {
     return this.products;
   }
 
-  getItem(id: string):Observable <Product>{
+  getItem(id: string): Observable<Product> {
     return of(this.products.find(
       product => product.id === id
     ));

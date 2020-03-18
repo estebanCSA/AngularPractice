@@ -329,11 +329,9 @@ export class DataService {
     }
   ];
   constructor() { }
-
   getProducts(): Iproduct[] {
     return this.products;
   }
-
   getProduct(sku: string): Observable<Iproduct> {
     return of(
     this.products.find(

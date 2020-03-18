@@ -2,89 +2,46 @@
     <h1 class="whiteText WelcomeMsg">Controls</h1>
 </div>
 <!-----------------------row 1----------------------->
-<div class="row lower">
-    <div class="col-3 px-0">
+<!--<div class="row lower">
+    <div class="col px-0" *ngFor='let item of productList'>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
+            class="img-fluid" alt="control">
+        <h3 class="center">{{item.pName}}</h3>
+        <p class="center">{{item.pDesc}}</p>
+        <h3 class="center">{{item.additionalInfo}}</h3>
+        <a routerLink="/{{item.pNameURL}}/{{item.id}}" class="center">
+            {{item.price}}
+        </a>
+        <button class="btn btn-primary" (click)="addToCart(item)"> + </button>
+        <div >
+            <app-modaldesc [product]='item'></app-modaldesc>
+        </div>
     </div>
 </div>
-<!-----------------------row 2----------------------->
-<div class="row lower">
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
-</div>
-<!-----------------------row 2----------------------->
-<!-----------------------row 3----------------------->
-<div class="row lower">
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
+-->
+<div class="container">
+<div class="container" *ngIf="showList">
+    <div class="shopping-cart">
+        <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge badge-info">{{cartCount}}</span>
+            <div class="shopping-cart-total">
+                <span>Total:</span>
+                <span>${{cartTotal}}</span>
+            </div>
+        </div>
+        <div *ngIf="cartItems.length == 0" class="py-2">
+            No items in your cart!
+        </div>
+        <ul class="shopping-cart-items">
+            <li *ngFor="let item of cartItems">
+                <img src="{{item.img}}" class="img-fluid">
+                <span class="item-name">{{.pName}}</span>
+                <span class="item-price">${{item.price}}</span>
+                <span class="item-quantity">quantity: {{item.quantity}}</span>
+                <a class="item-remove text-danger" (click)="removeFromCart(item, index)"> Remove </a>
+            </li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Checkout</a>
     </div>
 </div>
-<!-----------------------row 3----------------------->
-<!-----------------------row 4----------------------->
-<div class="row lower">
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
-    <div class="col-3 px-0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg"
-            class="img-fluid">
-    </div>
-    <div class="col-3 px-0 whiteText">
-        <h3 class="center">testing</h3>
-        <p class="center">description description description description</p>
-        <h3 class="center">testing</h3>
-    </div>
 </div>
-<!-----------------------row 4----------------------->

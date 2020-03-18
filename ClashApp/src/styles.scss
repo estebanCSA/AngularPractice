@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+.mainBG{
+    background-image: url("https://storage.needpix.com/rsynced_images/argyle-pattern-blue-seamless.jpg");
+    background-size: cover;
+    //https://storage.needpix.com/rsynced_images/argyle-pattern-blue-seamless.jpg
+}
+.woodBG{
+    background-image: url("https://www.xmple.com/wallpaper/black-brown-gradient-linear-2736x1824-c2-000000-8b4513-a-90-f-14.svg");
+    width: 100%;
+    border: ridge;
+    border-color: #915700;
+}
+.whiteT{
+    color: white;
+}
+.nav-item{
+    color: white;
+    font-size: 20px;
+}
+.nav-link{
+    font-size: 25px;
+}
+.navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+.navT{
+    font-size: large;
+}
+.center{
+    justify-content: center;
+  
+    text-align: center;
+}
+.footer{
+    position: bottom;
+    width: 100%;
+}
+.col-1, .col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    border-style: dashed;
+    border-color: red;
+}
+.row{
+    border-style: dashed;
+    border-color: yellow;
+}
+.container{
+    border-style: dashed;
+    border-color: black;
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+.lower{
+    margin-top: 15px;
+}
+.higher{
+    margin-bottom: 15px;
+}
+.randomBg{
+    background-color: blue;
+}
+h1,h5,h6,h2,h3,h4{
+    color: white;
+}
+.right{
+    position: relative;
+    left: 90%;
+} 

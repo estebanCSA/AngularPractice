@@ -22,7 +22,7 @@ product: Product[];
     //find info via service
     console.log(sku);
     this.dService.getItem(sku).subscribe(
-      x => this.product = x
+      //x => this.product = x
     );
 
   }
